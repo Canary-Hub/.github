@@ -15,6 +15,18 @@ flowchart LR
     b --> c[리콜 발생 시 알림 발송]
 ```
 
+### 이용 흐름
+
+```mermaid
+sequenceDiagram
+    participant U as 사용자
+    participant C as Canary
+    participant R as 해외 리콜 데이터
+    U->>C: 소셜 로그인 가입
+    R->>C: 리콜 정보 업데이트
+    C->>U: 리콜 알림 발송
+```
+
 ## 이런 분께 추천합니다
 
 - 해외 직구 식품을 자주 구매하는 분
